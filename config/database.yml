@@ -6,16 +6,16 @@
 #   gem 'sqlite3'
 #
 development:
-	adapter: postgresql
-	database: portal_development
+	adapter: sqlite3
+	database: db/development.sqlite3
 	pool: 5
 	timeout: 5000
 
 test:
-	adapter: postgresql
-	database: portal_test
+	adapter: sqlite3
+	database: db/test.sqlite3
 	pool: 5
-	timeout: 5000
+	timeout: 5000	
 
 production:
 	adapter: postgresql
